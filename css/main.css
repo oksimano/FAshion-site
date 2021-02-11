@@ -27,7 +27,7 @@ header .free {
 }
 
 header .logo {
-  color: #0909aa;
+  color: #213c83;
   padding: 1.5rem 0;
   font-size: 3.2rem;
 }
@@ -78,12 +78,24 @@ nav .navbar-brand {
 }
 
 .sweater {
-  text-align: center;
   margin: 0 auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 7rem;
+  width: 400px;
 }
 
 .sweater-item {
-  width: 100%;
+  margin-bottom: 7rem;
+}
+
+.sweater__h2 {
+  font-size: 4rem;
+  color: #213c83;
+}
+
+.sweater__paragraph {
+  font-size: 2rem;
+}
+
+.sweater a {
+  font-size: 2rem;
 }

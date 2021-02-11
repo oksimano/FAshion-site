@@ -2,7 +2,7 @@ $promo-color: #8d0e0e;
 $primary-color: #f4f4f4;
 $footer-color: #d3d3d3;
 $font-color: #fff;
-$header-color: rgb(9, 9, 170);
+$header-color: #213c83;
 
 html {
   font-size: 10px;
@@ -72,12 +72,22 @@ nav {
 }
 
 .sweater {
-  text-align: center;
   margin: 0 auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 7rem;
+
+  width: 400px;
 
   &-item {
-    width: 100%;
+    margin-bottom: 7rem;
+  }
+  &__h2 {
+    font-size: 4rem;
+    color: $header-color;
+  }
+  &__paragraph {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 2rem;
   }
 }
