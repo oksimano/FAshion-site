@@ -11,6 +11,10 @@ body {
   background-color: $primary-color;
   font-family: Mukta, Helvetica, sans-serif;
   font-size: 1.6rem;
+  min-width: 400px;
+}
+img {
+  width: 100%;
 }
 header {
   text-align: center;
@@ -55,15 +59,25 @@ nav {
   align-items: center;
   background-size: contain;
   &__text {
-    display: inline-block;
     color: $font-color;
     line-height: 1;
   }
   &__h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
   }
   &__p {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+}
+
+.sweater {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &-item {
+    width: 100%;
   }
 }

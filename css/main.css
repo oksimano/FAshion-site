@@ -6,6 +6,11 @@ body {
   background-color: #f4f4f4;
   font-family: Mukta, Helvetica, sans-serif;
   font-size: 1.6rem;
+  min-width: 400px;
+}
+
+img {
+  width: 100%;
 }
 
 header {
@@ -59,16 +64,26 @@ nav .navbar-brand {
 }
 
 .banner__text {
-  display: inline-block;
   color: #fff;
   line-height: 1;
 }
 
 .banner__h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .banner__p {
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+
+.sweater {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.sweater-item {
+  width: 100%;
 }
