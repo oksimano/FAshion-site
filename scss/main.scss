@@ -74,7 +74,6 @@ nav {
 .sweater {
   margin: 0 auto;
   padding-top: 7rem;
-
   width: 400px;
 
   &-item {
@@ -90,4 +89,35 @@ nav {
   a {
     font-size: 2rem;
   }
+}
+
+.h-250 {
+  height: 250px;
+}
+
+.terms {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer__container {
+  background-color: $footer-color;
+  text-align: center;
+
+  .social__icons {
+    height: inherit;
+  }
+  .fab {
+    font-size: 5rem;
+    padding: 1rem 1rem;
+  }
+  .fa-facebook {
+    color: $header-color;
+  }
+}
+
+.under__footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
 }

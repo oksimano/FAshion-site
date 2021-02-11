@@ -99,3 +99,36 @@ nav .navbar-brand {
 .sweater a {
   font-size: 2rem;
 }
+
+.h-250 {
+  height: 250px;
+}
+
+.terms {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer__container {
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+.footer__container .social__icons {
+  height: inherit;
+}
+
+.footer__container .fab {
+  font-size: 5rem;
+  padding: 1rem 1rem;
+}
+
+.footer__container .fa-facebook {
+  color: #213c83;
+}
+
+.under__footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
