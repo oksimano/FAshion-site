@@ -1,12 +1,16 @@
-$promo-color: #800c0c;
+$promo-color: #8d0e0e;
 $primary-color: #f4f4f4;
 $footer-color: #d3d3d3;
+$font-color: #fff;
+$header-color: rgb(9, 9, 170);
 
 html {
   font-size: 10px;
 }
 body {
   background-color: $primary-color;
+  font-family: Mukta, Helvetica, sans-serif;
+  font-size: 1.6rem;
 }
 header {
   text-align: center;
@@ -14,5 +18,20 @@ header {
   .free {
     padding: 1.2rem 0;
     background-color: $promo-color;
+    font-size: 1.3rem;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .logo {
+    color: $header-color;
+    padding: 1.5rem 0;
+    font-size: 3.2rem;
+  }
+}
+nav {
+  font-size: 2rem;
+  .navbar-brand {
+    font-size: 2.2rem;
   }
 }

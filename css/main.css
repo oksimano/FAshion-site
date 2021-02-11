@@ -4,6 +4,8 @@ html {
 
 body {
   background-color: #f4f4f4;
+  font-family: Mukta, Helvetica, sans-serif;
+  font-size: 1.6rem;
 }
 
 header {
@@ -12,5 +14,23 @@ header {
 
 header .free {
   padding: 1.2rem 0;
-  background-color: #800c0c;
+  background-color: #8d0e0e;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header .logo {
+  color: #0909aa;
+  padding: 1.5rem 0;
+  font-size: 3.2rem;
+}
+
+nav {
+  font-size: 2rem;
+}
+
+nav .navbar-brand {
+  font-size: 2.2rem;
 }
