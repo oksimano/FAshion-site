@@ -1,0 +1,18 @@
+$promo-color: #800c0c;
+$primary-color: #f4f4f4;
+$footer-color: #d3d3d3;
+
+html {
+  font-size: 10px;
+}
+body {
+  background-color: $primary-color;
+}
+header {
+  text-align: center;
+
+  .free {
+    padding: 1.2rem 0;
+    background-color: $promo-color;
+  }
+}
