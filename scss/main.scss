@@ -30,8 +30,8 @@ header {
   }
   .nav-item {
     transition: 0.2s;
-    &:hover {
-      background-color: darken($navbar-color, 20%);
+    .nav-link:hover {
+      @include set-mix-color(darken($navbar-color, 60%));
     }
   }
 }
@@ -168,17 +168,23 @@ header {
 .form {
   display: flex;
   z-index: 10;
-  outline: 1px solid $promo-color;
   bottom: 15%;
   min-width: 300px;
   max-width: 500px;
   left: 100px;
   transform: translateX(-500px) translateY(300px);
-  transition: all 1s;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 5px grey;
 
   &__item {
     width: 100%;
+    border: 1px solid $promo-color;
+    &:hover {
+      @include set-mix-color(darken($primary-color, 15%));
+    }
   }
 }
-
+::placeholder {
+  color: $promo-color;
+}
 @import "media";

@@ -61,8 +61,9 @@ header .logo {
   transition: 0.2s;
 }
 
-.navbar .nav-item:hover {
-  background-color: #bdc6d0;
+.navbar .nav-item .nav-link:hover {
+  background-color: #506070;
+  color: #fff;
 }
 
 .banner {
@@ -228,19 +229,42 @@ header .logo {
   display: -ms-flexbox;
   display: flex;
   z-index: 10;
-  outline: 1px solid #8d0e0e;
   bottom: 15%;
   min-width: 300px;
   max-width: 500px;
   left: 100px;
   -webkit-transform: translateX(-500px) translateY(300px);
           transform: translateX(-500px) translateY(300px);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
 }
 
 .form__item {
   width: 100%;
+  border: 1px solid #8d0e0e;
+}
+
+.form__item:hover {
+  background-color: #cecece;
+  color: #333;
+}
+
+::-webkit-input-placeholder {
+  color: #8d0e0e;
+}
+
+:-ms-input-placeholder {
+  color: #8d0e0e;
+}
+
+::-ms-input-placeholder {
+  color: #8d0e0e;
+}
+
+::placeholder {
+  color: #8d0e0e;
 }
 
 @media (min-width: 768px) {
