@@ -58,7 +58,7 @@
         <h2 class="banner__text banner__h2">Amazing Jacket</h2>
         <p class="banner__text banner__p">Purchase it while stocks last!</p>
       </div>
-      <section class="sweater">
+      <section class="sweater container d-md-flex justify-content-around">
         <div class="sweater-item item1">
           <img src="./Assets/Images/banner2.png" alt="Ugly sweater 1" />
           <h2 class="sweater__h2">Ugly Sweater Sale</h2>
@@ -198,29 +198,40 @@
     </footer>
     <div class="under__footer">Copyright &copy; Gianni Bellini</div>
     <div class="circle back">
-      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      <a href="#"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </div>
-    <div class="circle leave">
+    <label class="circle leave" for="form__active">
+      <input
+        type="checkbox"
+        name="checked"
+        id="form__active"
+        class="checkbox"
+      />
       <p>Leave a message</p>
-    </div>
-    <form
-      action="#"
-      method="post"
-      class="form d-flex flex-column position-fixed"
-    >
-      <label class="form__label">
-        <input type="text" name="name" placeholder="Name" class="form__input" />
-      </label>
-      <label class="form__label">
-        <input
-          type="email"
-          name="email"
-          placeholder="E-mail"
-          class="form__input"
-        />
-      </label>
-      <textarea placeholder="Message" class="form__textarea"></textarea>
-    </form>
+
+      <form action="#" method="post" class="form flex-column position-fixed">
+        <label class="form__label">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="form__input form__item"
+          />
+        </label>
+        <label class="form__label">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="form__input form__item"
+          />
+        </label>
+        <textarea
+          placeholder="Message"
+          class="form__textarea form__item"
+        ></textarea>
+      </form>
+    </label>
     <script src="./Assets/bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>

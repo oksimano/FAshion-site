@@ -13,12 +13,14 @@ body {
   font-size: 1.6rem;
   min-width: 400px;
 }
+a {
+  text-decoration: none;
+}
 img {
   width: 100%;
 }
 header {
   text-align: center;
-
   .free {
     padding: 1.2rem 0;
     background-color: $promo-color;
@@ -33,10 +35,13 @@ header {
     font-size: 3.2rem;
   }
 }
-nav {
+.navbar {
   font-size: 2rem;
-  .navbar-brand {
+  &-brand {
     font-size: 2.2rem;
+  }
+  &-toggler {
+    border: none;
   }
 }
 
@@ -74,10 +79,11 @@ nav {
 .sweater {
   margin: 0 auto;
   padding-top: 7rem;
-  width: 400px;
+  width: 100%;
 
   &-item {
     margin-bottom: 7rem;
+    width: 400px;
   }
   &__h2 {
     font-size: 4rem;
@@ -137,26 +143,41 @@ nav {
 }
 .back {
   right: 10px;
+  a {
+    color: $footer-color;
+  }
   .fa {
     font-size: 3rem;
-    padding-top: 3rem;
+    padding: 3rem;
+    border-radius: 100%;
   }
 }
 .leave {
   left: 10px;
+  .checkbox {
+    visibility: hidden;
+  }
   p {
-    padding-top: 3rem;
     line-height: 1;
+    padding-top: 1rem;
+  }
+  #form__active:checked ~ .form {
+    transform: translateZ(0) translateY(0);
   }
 }
 
 .form {
+  display: flex;
   z-index: 10;
   outline: 1px solid $promo-color;
   bottom: 15%;
-  width: 50vw;
-  left: 12%;
-  &__input {
+  min-width: 300px;
+  max-width: 500px;
+  left: 100px;
+  transform: translateX(-500px) translateY(300px);
+  transition: all 1s;
+
+  &__item {
     width: 100%;
   }
 }

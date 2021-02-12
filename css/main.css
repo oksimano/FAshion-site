@@ -9,6 +9,10 @@ body {
   min-width: 400px;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -32,12 +36,16 @@ header .logo {
   font-size: 3.2rem;
 }
 
-nav {
+.navbar {
   font-size: 2rem;
 }
 
-nav .navbar-brand {
+.navbar-brand {
   font-size: 2.2rem;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .banner {
@@ -80,11 +88,12 @@ nav .navbar-brand {
 .sweater {
   margin: 0 auto;
   padding-top: 7rem;
-  width: 400px;
+  width: 100%;
 }
 
 .sweater-item {
   margin-bottom: 7rem;
+  width: 400px;
 }
 
 .sweater__h2 {
@@ -155,28 +164,50 @@ nav .navbar-brand {
   right: 10px;
 }
 
+.back a {
+  color: #d3d3d3;
+}
+
 .back .fa {
   font-size: 3rem;
-  padding-top: 3rem;
+  padding: 3rem;
+  border-radius: 100%;
 }
 
 .leave {
   left: 10px;
 }
 
+.leave .checkbox {
+  visibility: hidden;
+}
+
 .leave p {
-  padding-top: 3rem;
   line-height: 1;
+  padding-top: 1rem;
+}
+
+.leave #form__active:checked ~ .form {
+  -webkit-transform: translateZ(0) translateY(0);
+          transform: translateZ(0) translateY(0);
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 10;
   outline: 1px solid #8d0e0e;
   bottom: 15%;
-  width: 50vw;
-  left: 12%;
+  min-width: 300px;
+  max-width: 500px;
+  left: 100px;
+  -webkit-transform: translateX(-500px) translateY(300px);
+          transform: translateX(-500px) translateY(300px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.form__input {
+.form__item {
   width: 100%;
 }
