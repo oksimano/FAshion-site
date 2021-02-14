@@ -123,8 +123,8 @@ header .logo {
 }
 
 .sweater .image__wraper:hover {
-  -webkit-transform: perspective(500px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
-          transform: perspective(500px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
+  -webkit-transform: perspective(100px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
+          transform: perspective(100px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
 }
 
 .sweater img {

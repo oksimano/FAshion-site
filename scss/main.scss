@@ -86,17 +86,18 @@ header {
     overflow: hidden;
     transition-delay: 1s;
     transition: 1s;
-  }
-  .image__wraper:hover {
-    transform: perspective(500px) rotateY(-10deg) translateX(-5px)
-      translateZ(-50px);
+
+    &:hover {
+      transform: perspective(100px) rotateY(-10deg) translateX(-5px)
+        translateZ(-50px);
+    }
   }
   img {
     transition-delay: 1.5s;
     transition: 1s;
-  }
-  img:hover {
-    transform: perspective(223px) translateZ(48px) translateY(44px);
+    &:hover {
+      transform: perspective(223px) translateZ(48px) translateY(44px);
+    }
   }
 }
 
