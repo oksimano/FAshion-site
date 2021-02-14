@@ -113,6 +113,32 @@ header .logo {
   font-size: 2rem;
 }
 
+.sweater .image__wraper {
+  height: 500px;
+  overflow: hidden;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sweater .image__wraper:hover {
+  -webkit-transform: perspective(500px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
+          transform: perspective(500px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
+}
+
+.sweater img {
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sweater img:hover {
+  -webkit-transform: perspective(223px) translateZ(48px) translateY(44px);
+          transform: perspective(223px) translateZ(48px) translateY(44px);
+}
+
 .h-250 {
   height: 250px;
 }
