@@ -81,23 +81,22 @@ header {
   a {
     font-size: 2rem;
   }
-  .image__wraper {
+  .image__container {
+    perspective: 1000px;
+    backface-visibility: hidden;
     height: 500px;
-    overflow: hidden;
-    transition-delay: 1s;
-    transition: 1s;
-
-    &:hover {
-      transform: perspective(100px) rotateY(-10deg) translateX(-5px)
-        translateZ(-50px);
-    }
   }
+  .image__wraper {
+    overflow: hidden;
+    background-image: url(../Assets/Images/banner2.png);
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+  }
+
   img {
-    transition-delay: 1.5s;
     transition: 1s;
-    &:hover {
-      transform: perspective(223px) translateZ(48px) translateY(44px);
-    }
   }
 }
 
