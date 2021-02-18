@@ -6,12 +6,6 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oksimano/Fashion-site/issues"
-  },
-  "homepage": "https://oksimano.github.hu/fashion-site",
   "dependencies": {
     "bootstrap": "^5.0.0-beta2",
     "popper": "^1.0.1"
