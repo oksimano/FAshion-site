@@ -8,4 +8,4 @@ Aplied technologies:
 
 ## Hosting
 
-(oksimano.github.io/Fashion-site)https://oksimano.github.io/Fashion-site/
+[oksimano.github.io/Fashion-site]https://oksimano.github.io/Fashion-site/
